@@ -4,7 +4,7 @@
 
 Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
 
-![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/general_concept.jpg)
+![alt text](https://github.com/panoskom/ISTRUST_MODEL/blob/main/Figs/general_concept.jpg)
 
 
 
@@ -186,14 +186,14 @@ The files and folders of the project are distributed in the following manner ('-
 
 ## Example
 
-To specifically describe how to train and use the DC model, we show an example below. To run the code from the Anaconda terminal with default values, go to the `monotonic_dc` folder inside the `Monotonic_DC` directory and run the `main.py` file via the commands:
+To specifically describe how to train and use the ISTRUST model, we show an example below. To run the code from the Anaconda terminal with default values, go to the `istrust` folder inside the `ISTRUST_MODEL` directory and run the `main.py` file via the commands:
 
 ```
-cd monotonic_dc
+cd istrust
 python main.py
 ```
 
-This runs the DC model for the C-MAPSS dataset by default. If you want to change some of the default variables, for example, if you want to enable the Bayesian Optimization algorithm and not rely on the existing hyperparameters, and to train the DC model on the MIMIC-III dataset run the command:
+If you want to change some of the default variables, for example, ..., run the command:
 
 `python main.py --bayesian_opt True --mimic True`
 
@@ -201,10 +201,7 @@ See the `main.py` file for different existing variables and options.
 
 ### Results
 
-The results are saved inside the directory `../Monotonic_DC/monotonic_dc/results/`The clustering results and the survivability plots (produced by the Kaplan-Meier method) for 10 trajectories of the C-MAPSS dataset are shown below:
+The results are saved inside the directory `../ISTRUST_MODEL/istrust/runs/`. The results concerning the RUL predictions under uncertainty and the interpretability of the ISTRUST model via spatiotemporal attention are shown below. The figure corresponds to 3 specimens; the two specimens to the left are classified as optimal results, while the last one corresponds to suboptimal results. Nevertheless, the reasons that separate a prediction into optimal/suboptimal are satisfactorily explained via this interpretability (see Results section in the paper).
 
-![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/results.jpg)
-
->**Note**
->The results may be slightly different for different hardware setups. Additionally, varying tuned hyperparameters may be used after running the Bayesian Optimization algorithm on different hardware. This explains why we presented in the paper the mean and variance of the losses over 10 independent runs of the code. The corresponding figures come after setting the seeding of the algorithm, which is different depending on the computer system.
+![alt text](https://github.com/panoskom/ISTRUST_MODEL/blob/main/Figs/results.jpg)
 
