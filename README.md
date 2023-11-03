@@ -1,4 +1,4 @@
-# ISTRUST_MODEL
+#  Interpretable Spatiotemporal TRansformer for Understanding STructures (ISTRUST)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
