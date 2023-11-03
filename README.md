@@ -25,7 +25,7 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
   torch==1.11.0
   torchvision==0.15.2
   torchaudio==0.11.0
-  numpy==1.13.4
+  numpy==1.23.4
   pandas==1.5.3
   pillow==9.4.0
   matplotlib==3.5.2
@@ -41,14 +41,14 @@ Create an Anaconda environment and install PyTorch. In the 3rd step, please sele
 ```
 conda create -n mono_dc python=3.9.12
 conda activate mono_dc
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+conda install pytorch==1.11.0 torchvision==0.15.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
 This repository can be directly installed through github by the following commands:
 
 ```
 conda install git
-git clone https://github.com/panoskom/Monotonic_DC.git
-cd Monotonic_DC
+git clone https://github.com/panoskom/ISTRUST_MODEL.git
+cd ISTRUST_MODEL
 python setup.py install
 conda install numpy-base==1.23.4
 ```
