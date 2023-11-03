@@ -39,11 +39,11 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 Create an Anaconda environment and install PyTorch. In the 3rd step, please select the correct Pytorch version that matches your CUDA version from https://pytorch.org/get-started/previous-versions/. Open an Anaconda terminal and run the following:
 
 ```
-conda create -n mono_dc python=3.9.12
-conda activate mono_dc
+conda create -n istrust_model python=3.9.12
+conda activate istrust_model
 conda install pytorch==1.11.0 torchvision==0.15.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
-This repository can be directly installed through github by the following commands:
+This repository can be directly installed through GitHub by the following commands:
 
 ```
 conda install git
