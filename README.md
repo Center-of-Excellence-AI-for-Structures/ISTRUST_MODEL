@@ -1,14 +1,8 @@
 # ISTRUST_model
-Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
-
-
-# DC Model
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Code for paper "A generalized deep monotonic feature extraction and clustering model for label-free prediction of degenerative phenomena in multidisciplinary domains"
-
-In this paper, we propose a deep monotonic unsupervised clustering model for feature extraction and clustering analysis in deteriorating systems. The model innovatively extracts prognostic-related features from raw data, capturing increasing monotonic features representing system deterioration. Then, it performs monotonic clustering, revealing information about deterioration and possible recoveries.
+Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
 
 ![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/DC_model.jpg)
 
