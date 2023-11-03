@@ -7,8 +7,6 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 ![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/general_concept.jpg)
 
 
-![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/model_architecture.jpg)
-
 
 ## Table of Contents
 
