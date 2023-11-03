@@ -10,7 +10,7 @@ Code for paper "A generalized deep monotonic feature extraction and clustering m
 
 In this paper, we propose a deep monotonic unsupervised clustering model for feature extraction and clustering analysis in deteriorating systems. The model innovatively extracts prognostic-related features from raw data, capturing increasing monotonic features representing system deterioration. Then, it performs monotonic clustering, revealing information about deterioration and possible recoveries.
 
-![alt text](https://github.com/panoskom/ISTRUST_model/blob/master/Figs/DC_model.jpg)
+![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/DC_model.jpg)
 
 
 ## Table of Contents
@@ -208,7 +208,7 @@ See the `main.py` file for different existing variables and options.
 
 The results are saved inside the directory `../Monotonic_DC/monotonic_dc/results/`The clustering results and the survivability plots (produced by the Kaplan-Meier method) for 10 trajectories of the C-MAPSS dataset are shown below:
 
-![alt text](https://github.com/panoskom/ISTRUST_model/blob/master/Figs/Clustering_results_Survivability_plot.jpg)
+![alt text](https://github.com/panoskom/ISTRUST_model/blob/main/Figs/Clustering_results_Survivability_plot.jpg)
 
 >**Note**
 >The results may be slightly different for different hardware setups. Additionally, varying tuned hyperparameters may be used after running the Bayesian Optimization algorithm on different hardware. This explains why we presented in the paper the mean and variance of the losses over 10 independent runs of the code. The corresponding figures come after setting the seeding of the algorithm, which is different depending on the computer system.
