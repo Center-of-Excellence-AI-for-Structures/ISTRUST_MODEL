@@ -18,7 +18,7 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 ## Environment and Requirements
 
 - Windows 10
-- Either GPU or CPU (Tested on Nvidia GeForce RTX 2080 GPU)
+- Either GPU or CPU. However, a GPU is highly recommended (Tested on Nvidia RTX4080 16GB GPU).
 - The developed version of the code mainly depends on the following 'Python 3.9.12' packages.
 
   ```
@@ -26,15 +26,14 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
   torchvision==0.12.0
   torchaudio==0.11.0
   numpy==1.23.4
+  math==
   pandas==1.5.3
   matplotlib==3.5.2
-  seaborn==0.12.1
-  scikit-learn==1.2.2
-  scikit-survival==0.21.0
   hmmlearn==0.3.0
   joblib==1.2.0
-  tslearn==0.5.2
   tqdm==4.64.0
+  keyboard==
+  umap==
   ```
 
 ## Environment Configuration and Installation
