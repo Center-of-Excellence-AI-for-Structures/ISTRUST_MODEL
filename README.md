@@ -23,17 +23,16 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 
   ```
   torch==1.11.0
-  torchvision==0.12.0
+  torchvision==0.15.2
   torchaudio==0.11.0
-  numpy==1.23.4
-  math==
+  numpy==1.13.4
   pandas==1.5.3
+  pillow==9.4.0
   matplotlib==3.5.2
-  hmmlearn==0.3.0
+  scipy==1.10.1
   joblib==1.2.0
-  tqdm==4.64.0
-  keyboard==
-  umap==
+  keyboard==0.13.5
+  umap-learn==0.5.3
   ```
 
 ## Environment Configuration and Installation
