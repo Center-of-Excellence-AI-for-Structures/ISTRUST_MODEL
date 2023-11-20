@@ -1,0 +1,21 @@
+{
+    "batch_size": 32,
+    "test_batch_size": 32,
+    "skip_images": 3,
+    "shuffle_train": true,
+    "num_epochs": {
+        "s1": 15,
+        "s2": 6
+    },
+    "lr": {
+        "s1": 0.02,
+        "s2": 0.001
+    },
+    "momentum": 0.9,
+    "dropout": {
+        "s1": 0.3,
+        "s2": 0.1
+    },
+    "temp_supcr": 2.0,
+    "thresh_select_best": 2.25
+}
