@@ -40,8 +40,8 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 Create an Anaconda environment and install PyTorch. In the 3rd step, please select the correct Pytorch version that matches your CUDA version from https://pytorch.org/get-started/previous-versions/. Open an Anaconda terminal and run the following:
 
 ```
-conda create -n istrust_model python=3.9.12
-conda activate istrust_model
+conda create -n istrust python=3.9.12
+conda activate istrust
 conda install pytorch==1.11.0 torchvision==0.15.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 ```
 This repository can be directly installed through GitHub by the following commands:
@@ -58,21 +58,27 @@ conda install numpy-base==1.23.4
 
 In this project, we use an experimental dataset that can be downloaded via the following DOI: 10.17632/ky3gb8rk9h.1 
 
-In the link above, information about installing and understanding the dataset can be found. The 2 required folders that are needed to run the code are the dataset and the runs folder. The dataset folder should contain the extracted images representing the experimental data. The runs folder contains the trained models from the cross-validation process that are required to evaluate the results. If the user chooses to train the model from scratch this folder is not needed.
+In the link above, information can be found about installing and understanding the dataset. The only required folder to run the code is the dataset folder. The dataset folder should contain the extracted images representing the experimental data. 
+
+The runs folder that already exists contains the trained models from the cross-validation process that are required to evaluate the results. If the user chooses to train the model from scratch this folder is not needed. However, for potential memory issues we do recommend using our already trained models instead.
  
 
 ## Example
 
-To specifically describe how to train and use the ISTRUST model, we show an example below. To run the code from the Anaconda terminal with default values, go to the `istrust` folder inside the `ISTRUST_MODEL` directory and run the `main.py` file via the commands:
+To specifically describe how to train and use the ISTRUST model, we show an example below. To run the code from the Anaconda terminal with default values, go to the `istrust_model` folder inside the `ISTRUST_MODEL` directory and run the `main.py` file via the commands:
 
 ```
-cd istrust
+cd istrust_model
 python main.py
 ```
 
-If you want to change some of the default variables, for example, ..., run the command:
+If you want to change some of the default variables, for example, if the code has been already run once, some processes are not needed, therefore run the command:
 
-`python main.py --bayesian_opt True --mimic True`
+`python main.py --create_data False --create_augmented_data False`
+
+If you want to store the attention weights and the UMAP representations run the command:
+
+`python main.py --export_attention_weights True --export_umap True`
 
 See the `main.py` file for different existing variables and options.
 
