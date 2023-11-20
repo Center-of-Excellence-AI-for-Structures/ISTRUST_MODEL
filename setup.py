@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="monotonic_dc",
+    name="ISTRUST_MODEL",
     version="1.0",
     description="Deep monotonic unsupervised clustering model for feature extraction and clustering analysis of deteriorating systems.",
-    author="Panagiotis Komninos",
-    author_email="panakom@hotmail.com",
+    authors="Panagiotis Komninos, A.E.C. Verraest"
+    author_emails="panakom@hotmail.com, A.E.C.Verraest@student.tudelft.nl"
     packages=find_packages(include=["monotonic_dc", "monotonic_dc.*"]),
     install_requires=[
         "pandas==1.5.3",
