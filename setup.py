@@ -4,8 +4,8 @@ setup(
     name="istrust_model",
     version="1.0",
     description="A novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads",
-    author="Panagiotis Komninos, A.E.C. Verraest"
-    author_email="panakom@hotmail.com"
+    author="Panagiotis Komninos, A.E.C. Verraest",
+    author_email="panakom@hotmail.com",
     packages=find_packages(include=["istrust_model", "istrust_model.*"]),
     install_requires=[
         "pandas==1.5.3",
