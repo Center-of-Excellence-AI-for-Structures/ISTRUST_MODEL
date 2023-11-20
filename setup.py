@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="istrust_model",
     version="1.0",
-    description="Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads",
+    description="A novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads",
     authors="Panagiotis Komninos, A.E.C. Verraest"
     author_emails="panakom@hotmail.com, A.E.C.Verraest@student.tudelft.nl"
     packages=find_packages(include=["istrust_model", "istrust_model.*"]),
