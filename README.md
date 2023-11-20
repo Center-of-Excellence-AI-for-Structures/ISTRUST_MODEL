@@ -58,7 +58,7 @@ conda install numpy-base==1.23.4
 
 In this project, we use an experimental dataset that can be downloaded via the following DOI: 10.17632/ky3gb8rk9h.1 
 
-In the link above, information can be found about installing and understanding the dataset. ***The only required folder to run the code is the*** `dataset` ***folder***. Simply, ***paste the*** `dataset` ***folder inside the*** `istrust_model`. The dataset folder should contain the extracted images representing the experimental data. 
+In the link above, information can be found about installing and understanding the dataset. **The only required folder to run the code is the** `dataset` **folder**. Simply, **extract the** `dataset.zip` **inside the** `istrust_model` **with the folder name** `dataset`. The dataset folder should contain the extracted images representing the experimental data. 
 
 The runs folder that already exists contains the trained models from the cross-validation process that are required to evaluate the results. If the user chooses to train the model from scratch this folder is not needed. However, for potential memory issues we do recommend using our already trained models instead.
  
