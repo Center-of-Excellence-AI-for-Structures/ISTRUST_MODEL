@@ -1,0 +1,17 @@
+{
+    "window_size": 7,
+    "image_width": 320,
+    "image_height": 640,
+    "image_width_aug": 240,
+    "image_height_aug": 480,
+    "n_features": 1,
+    "min_train": 0.0,
+    "max_train": 3383.080078125,
+    "testing_set_exists": true,
+    "validation_set_exists": false,
+    "normalize_value_dataset": 255,
+    "mean": 0.49370697140693665,
+    "std": 0.2917138636112213,
+    "sample_from_tensor": true,
+    "n_samples_per_experiment": 2
+}
