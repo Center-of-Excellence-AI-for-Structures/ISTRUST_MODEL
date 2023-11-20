@@ -32,6 +32,7 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
   scipy==1.10.1
   joblib==1.2.0
   keyboard==0.13.5
+  tqdm==4.64.0
   umap-learn==0.5.3
   ```
 
