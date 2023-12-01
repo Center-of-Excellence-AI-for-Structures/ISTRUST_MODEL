@@ -22,13 +22,13 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 - The developed version of the code mainly depends on the following 'Python 3.9.12' packages.
 
   ```
-  torch==1.11.0
-  torchvision==0.15.2
-  torchaudio==0.11.0
+  torch==1.13.1
+  torchvision==0.14.1
+  torchaudio==0.13.1
   numpy==1.23.4
   pandas==1.5.3
-  pillow==9.5.0
-  matplotlib==3.5.2
+  pillow==9.4.0
+  matplotlib==3.7.1
   scipy==1.10.1
   joblib==1.2.0
   keyboard==0.13.5
@@ -42,7 +42,7 @@ Create an Anaconda environment and install PyTorch. In the 3rd step, please sele
 ```
 conda create -n istrust python=3.9.12
 conda activate istrust
-conda install pytorch==1.11.0 torchvision==0.15.2 torchaudio==0.11.0 cudatoolkit=11.3 tensorboard -c pytorch
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cudatoolkit=11.6 tensorboard=2.13.0 -c pytorch
 ```
 This repository can be directly installed through GitHub by the following commands:
 
