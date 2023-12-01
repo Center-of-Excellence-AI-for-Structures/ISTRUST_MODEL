@@ -7,4 +7,4 @@ umap-learn==0.5.3
 joblib==1.2.0
 tqdm==4.64.0
 keyboard==0.13.5
- tensorboard==1.14.0
+tensorboard==1.14.0
