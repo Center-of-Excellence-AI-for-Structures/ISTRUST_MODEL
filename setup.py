@@ -17,6 +17,5 @@ setup(
         "joblib==1.2.0",
         "numpy==1.23.4",
         "tqdm==4.64.0",
-        "tensorboard==1.14.0",
     ],
 )
