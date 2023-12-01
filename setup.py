@@ -9,8 +9,8 @@ setup(
     packages=find_packages(include=["istrust_model", "istrust_model.*"]),
     install_requires=[
         "pandas==1.5.3",
-        "matplotlib==3.5.2",
-        "pillow==9.5.0",
+        "matplotlib==3.7.1",
+        "pillow==9.4.0",
         "scipy==1.10.1",
         "keyboard==0.13.5",
         "umap-learn==0.5.3",
