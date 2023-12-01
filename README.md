@@ -42,7 +42,7 @@ Create an Anaconda environment and install PyTorch. In the 3rd step, please sele
 ```
 conda create -n istrust python=3.9.12
 conda activate istrust
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 cudatoolkit=11.6 tensorboard=2.13.0 -c pytorch
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 pillow==9.4.0 --extra-index-url https://download.pytorch.org/whl/cu116
 ```
 This repository can be directly installed through GitHub by the following commands:
 
