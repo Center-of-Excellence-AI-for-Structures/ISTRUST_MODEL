@@ -3,7 +3,7 @@ import torch
 from run_istrust import RunISTRUST
 from data_gen import create_dataset
 from data_augmentation import augment_data
-from utils import search_folder, str2bool, test_samples2list
+from utils import search_folder, str2bool, test_samples2list, check_args
 
 
 def run_process(args):
@@ -14,6 +14,10 @@ def run_process(args):
             args: arguments originating from parser.parse_args()
     """
 
+    # Check whether boolean combinations are allowed/make sense
+    check_args(args)
+
+    # Get arguments
     has_validation = args.has_validation
     create_data = args.create_data
     create_augmented_data = args.create_augmented_data
@@ -92,7 +96,8 @@ if __name__ == "__main__":
         "--create_augmented_data",
         default=True,
         type=str2bool,
-        help="Whether we need to create augmented data. After creating them, set this to False to save time, default=True"
+        help="Whether we need to create augmented data. After creating them, set this to False to save time, "
+             "default=True"
     )
     parser.add_argument(
         "--n_aug",
