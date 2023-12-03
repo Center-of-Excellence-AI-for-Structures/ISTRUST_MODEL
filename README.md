@@ -10,12 +10,13 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
 
 ## Table of Contents
 
-- [Environment and Requirements](#requirements)
-- [Configuration and Installation](#installation)
-- [Data Structure](#structure)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Structure](#structure)
 - [Example](#example)
+- [Contributors](#contributors)
 
-## Environment and Requirements
+## Requirements
 
 - Windows 10
 - Either GPU or CPU. However, a GPU is highly recommended (Tested on Nvidia RTX4080 16GB GPU).
@@ -36,7 +37,7 @@ Code for the paper "Breaking the black box barrier: predicting remaining useful 
   umap-learn==0.5.3
   ```
 
-## Environment Configuration and Installation
+## Installation
 Create an Anaconda environment and install PyTorch. In the 3rd step, please select the correct Pytorch version that matches your CUDA version from https://pytorch.org/get-started/previous-versions/. Open an Anaconda terminal and run the following:
 
 ```
@@ -54,7 +55,7 @@ python setup.py install
 conda install numpy-base==1.23.4
 ```
 
-## Data Structure
+## Structure
 
 In this project, we use an experimental dataset that can be downloaded via the following DOI: 10.17632/ky3gb8rk9h.1 
 
@@ -76,9 +77,9 @@ If you want to change some of the default variables, for example, if the code ha
 
 `python main.py --create_data False --create_augmented_data False`
 
-If you want to store the attention weights and the UMAP representations run the command:
+If you want to store the attention weights and the UMAP representations, and you don't want to create/augment the data again, run the command:
 
-`python main.py --export_attention_weights True --export_umap True`
+`python main.py --create_data False --create_augmented_data False --export_attention_weights True --export_umap True`
 
 See the `main.py` file for different existing variables and options.
 
@@ -87,4 +88,9 @@ See the `main.py` file for different existing variables and options.
 The results are saved inside the directory `../ISTRUST_MODEL/istrust/runs/`. The results concerning the RUL predictions under uncertainty and the interpretability of the ISTRUST model via spatiotemporal attention are shown below. The figure corresponds to 3 specimens; the two specimens to the left are classified as optimal results, while the last one corresponds to suboptimal results. Nevertheless, the reasons that separate a prediction into optimal/suboptimal are satisfactorily explained via this interpretability (see Results section in the paper).
 
 ![alt text](https://github.com/panoskom/ISTRUST_MODEL/blob/main/Figs/results.jpg)
+
+## Contributors
+
+[Panagiotis Komninos](https://github.com/panoskom)
+[Aderik Verraest](https://github.com/aderikverraest)
 
