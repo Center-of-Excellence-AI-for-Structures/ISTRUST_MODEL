@@ -91,6 +91,6 @@ The results are saved inside the directory `../ISTRUST_MODEL/istrust/runs/`. The
 
 ## Contributors
 
-[Panagiotis Komninos](https://github.com/panoskom)
-[Aderik Verraest](https://github.com/aderikverraest)
+- [Panagiotis Komninos](https://github.com/panoskom)
+- [Aderik Verraest](https://github.com/aderikverraest)
 
