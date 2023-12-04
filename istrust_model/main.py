@@ -1,3 +1,9 @@
+# Exclude numba deprecation warning (has been tested to work fine regardless of deprecation, given that numba==0.58)
+from numba.core.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
+import warnings
+warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
+warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
+
 import argparse
 import torch
 from run_istrust import RunISTRUST
