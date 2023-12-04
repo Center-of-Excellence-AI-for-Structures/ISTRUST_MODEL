@@ -49,7 +49,7 @@ This repository can be directly installed through GitHub by the following comman
 
 ```
 conda install git
-git clone https://github.com/panoskom/ISTRUST_MODEL.git
+git clone https://github.com/Center-of-Excellence-AI-for-Structures/ISTRUST_MODEL.git
 cd ISTRUST_MODEL
 python setup.py install
 conda install numpy-base==1.23.4
