@@ -1,4 +1,4 @@
-# Exclude numba deprecation warning (has been tested to work fine regardless of deprecation, given that numba==0.58)
+# Suppress numba warning message (requires that numba version is <= 0.58)
 from numba.core.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
 import warnings
 warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
