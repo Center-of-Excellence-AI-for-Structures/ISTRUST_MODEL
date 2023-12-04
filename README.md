@@ -4,7 +4,7 @@
 
 Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
 
-![alt text](https://github.com/panoskom/ISTRUST_MODEL/blob/main/Figs/general_concept.jpg)
+![alt text](https://github.com/Center-of-Excellence-AI-for-Structures/ISTRUST_MODEL/blob/main/Figs/general_concept.jpg)
 
 
 
@@ -87,7 +87,7 @@ See the `main.py` file for different existing variables and options.
 
 The results are saved inside the directory `../ISTRUST_MODEL/istrust/runs/`. The results concerning the RUL predictions under uncertainty and the interpretability of the ISTRUST model via spatiotemporal attention are shown below. The figure corresponds to 3 specimens; the two specimens to the left are classified as optimal results, while the last one corresponds to suboptimal results. Nevertheless, the reasons that separate a prediction into optimal/suboptimal are satisfactorily explained via this interpretability (see Results section in the paper).
 
-![alt text](https://github.com/panoskom/ISTRUST_MODEL/blob/main/Figs/results.jpg)
+![alt text](https://github.com/Center-of-Excellence-AI-for-Structures/ISTRUST_MODEL/blob/main/Figs/results.jpg)
 
 ## Contributors
 
