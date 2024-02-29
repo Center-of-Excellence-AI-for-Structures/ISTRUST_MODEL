@@ -81,8 +81,8 @@ if __name__ == "__main__":
         "--test_samples",
         default=list(range(1, 7)),
         type=test_samples2list,
-        help="Test sample to use if not using entire range: choose from 1-2-3-4-5-6, by default all test samples "
-             "are included (range from 1 to 6), default=list(range(1, 7))",
+        help="Test sample to use if not using entire range: choose from 1-2-3-4-5-6, by default all test samples (currently, you can choose either 1 or all of the test samples)"
+             "are included (range from 1 to 6). The 7th specimen is dropped inside the code, default=list(range(1, 7))",
     )
     parser.add_argument(
         "--has_validation",
