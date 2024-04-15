@@ -2,7 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Code for the paper "Breaking the black box barrier: predicting remaining useful life under uncertainty from raw images with interpretable neural networks". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
+Code for the paper "Intelligent fatigue damage tracking and prognostics of composite structures utilizing
+raw images via interpretable deep learning". This is a novel interpretable transformer-based model for Remaining Useful Life (RUL) prediction from raw sequential images (frames) representing a composite structure under fatigue loads.
 
 ![alt text](https://github.com/Center-of-Excellence-AI-for-Structures/ISTRUST_MODEL/blob/main/Figs/general_concept.jpg)
 
