@@ -236,11 +236,11 @@ def check_args(args):
                       f"(create_augmented_data=True and data_augmentation=False)")
         n_warnings += 1
 
-    if args.train and not data_exists:
+    if args.train and not data_exists and not args.create_data:
         raise ValueError(f"Cannot train the model without creating the dataset,"
                          f"set create_data=True")
 
-    if args.train and args.data_augmentation and not data_aug_exists:
+    if args.train and args.data_augmentation and not data_aug_exists and not args.create_data:
         raise ValueError(f"Cannot train the model with data_augmentation=True without creating the augmented dataset,"
                          f"set create_augmented_data=True")
 
