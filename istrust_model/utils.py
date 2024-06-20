@@ -198,9 +198,9 @@ def check_args(args):
         data_exists = True
         data_aug_exists = True
         for test_sample in args.test_samples:
-            name_dataset = f"window_size_7_test_{test_sample}_training_set.pth"
+            name_dataset = f"window_size_{args.window_size}_test_{test_sample}_training_set.pth"
             data_exists *= name_dataset in os.listdir(f"dataset_processed")
-            name_dataset = f"window_size_7_test_{test_sample}_training_set_augmented.pth"
+            name_dataset = f"window_size_{args.window_size}_test_{test_sample}_training_set_augmented.pth"
             data_aug_exists *= name_dataset in os.listdir(f"dataset_processed")
 
     # Check if all models have been trained already
@@ -209,7 +209,7 @@ def check_args(args):
     else:
         model_exists = True
         for test_sample in args.test_samples:
-            name_dataset = f"window_size_7_test_{test_sample}"
+            name_dataset = f"window_size_{args.window_size}_test_{test_sample}"
             in_folder = False
             for candidate_name in os.listdir(f"runs"):
                 in_folder += name_dataset in candidate_name

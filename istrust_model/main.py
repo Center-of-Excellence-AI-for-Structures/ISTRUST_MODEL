@@ -42,9 +42,9 @@ def run_process(args):
             print("Creating dataset")
             filename_dataset = create_dataset(test_sample, has_validation=has_validation)
         else:
-            filename_dataset = f"window_size_7_test_{test_sample}"
+            filename_dataset = f"window_size_{args.window_size}_test_{test_sample}"
 
-        if create_augmented_data:
+        if train and create_augmented_data:
             print("\nAugmenting dataset")
             augment_data(filename_dataset, n_aug)
 
@@ -149,6 +149,14 @@ if __name__ == "__main__":
         type=str2bool,
         help="if True, exports the UMAP of the training sets, is independent of whether or not train is True, "
              "caution, this is computationally expensive and might take up to a few minutes extra, default=False",
+    )
+    parser.add_argument(
+        "--window_size",
+        default=7,
+        type=int,
+        help="Window size of model used to select the correct dataset if data has been created, "
+             "does not change the dataset itself. Te create a dataset with a certain window size, "
+             "change the data_params_init.json",
     )
 
     run_process(parser.parse_args())
