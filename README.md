@@ -58,7 +58,8 @@ conda install numpy-base==1.23.4
 
 ## Structure
 
-In this project, we use an experimental dataset that can be downloaded via the following DOI: 10.17632/ky3gb8rk9h.1 
+In this project, we use an experimental dataset that can be downloaded via the following link: 
+https://data.mendeley.com/datasets/ky3gb8rk9h/4
 
 In the link above, information can be found about installing and understanding the dataset. **The only required folder to run the code is the** `dataset` **folder**. Simply, **extract the** `dataset.zip` **inside the** `ISTRUST_MODEL/istrust_model` (required folder name `dataset`). The dataset folder should contain the extracted images representing the experimental data. From the 9 specimens provided in the dataset, we utilized the first 6.
 
