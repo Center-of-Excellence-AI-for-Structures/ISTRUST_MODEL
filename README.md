@@ -91,8 +91,38 @@ The results are saved inside the directory `../ISTRUST_MODEL/istrust/runs/`. The
 
 ![alt text](https://github.com/Center-of-Excellence-AI-for-Structures/ISTRUST_MODEL/blob/main/Figs/results.jpg)
 
+## Citing this repository
+
+Use the following to cite this repository:
+```
+@article{komninos2024intelligent,
+  title={Intelligent fatigue damage tracking and prognostics of composite structures utilizing raw images via interpretable deep learning},
+  author={Komninos, P and Verraest, AEC and Eleftheroglou, N and Zarouchas, D},
+  journal={Composites Part B: Engineering},
+  volume={287},
+  pages={111863},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
+The corresponding reference should look like this:
+
+Komninos, P., et al. "Intelligent fatigue damage tracking and prognostics of composite structures utilizing raw images via interpretable deep learning." Composites Part B: Engineering 287 (2024): 111863.
+
 ## Contributors
 
 - [Aderik Verraest](https://github.com/aderikverraest)
 - [Panagiotis Komninos](https://github.com/panoskom)
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+ 
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+ 
+[![CC BY 4.0][cc-by-image]][cc-by]
+ 
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
